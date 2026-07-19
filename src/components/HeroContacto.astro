@@ -1,12 +1,11 @@
 ---
 import ContactForm from "./ContactForm.astro";
-let mode = import.meta.env.MODE;
 ---
 
 <div
     class="flex p-20 min-w-full min-h-screen gap-20"
-    style=`background: linear-gradient(to top, 
-      rgba(7, 22, 48, 0.6)0%,rgba(7, 22, 48, 0.9)50%), ${mode==="production" ? "url('/abogados-rcg-astro-fromscratch/biblioteca.jpg')" : "url('biblioteca.jpg')"}; background-size:cover;`>
+    style="background: linear-gradient(to top,
+      rgba(7, 22, 48, 0.6)0%,rgba(7, 22, 48, 0.9)50%), url('/biblioteca.jpg'); background-size:cover;">
     <div
         class="flex flex-col gap-10 justify-center items-center w-full opacity-0 animate-delayedFadeInDown">
         <h2 class="text-6xl text-gray-100">
@@ -91,10 +90,5 @@ let mode = import.meta.env.MODE;
             </p>
             <ContactForm />
         </div>
-    </div> -->
-    <!-- <div class="absolute flex w-full h-[940px] top-0 left-0 bg-cover opacity-30 -z-10 transition-all animate-backgroundFadeIn"
-        class:list={[
-            {"bg-[url('/abogados-rcg-astro-fromscratch/biblioteca.jpg')]": mode === "production", 
-             "bg-[url('biblioteca.jpg')]": mode !== "production"}]}>
     </div> -->
 </div>

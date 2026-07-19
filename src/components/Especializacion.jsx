@@ -9,16 +9,7 @@ function Especializacion({ imageRoute, title, text }) {
             </div>
             <div
                 className="absolute inset-0 opacity-50 bg-cover bg-center -z-10 rounded-sm"
-                style={
-                    import.meta.env.MODE === "production"
-                        ? {
-                              backgroundImage: `url(${
-                                  "/abogados-rcg-astro-fromscratch/" +
-                                  imageRoute
-                              })`,
-                          }
-                        : { backgroundImage: `url(${imageRoute})` }
-                }
+                style={{ backgroundImage: `url(/${imageRoute})` }}
             />
         </>
     );

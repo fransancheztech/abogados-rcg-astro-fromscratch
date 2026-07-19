@@ -14,7 +14,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   integrations: [react()],
-  site: 'http://localhost:4321'
-  // site: 'https://FranSCoder.github.io',
-  // base: '/abogados-rcg-astro-fromscratch',
+  // Deployed at the OVH root domain, so no `base` path is needed.
+  site: 'https://abogadosrcg.com',
 });

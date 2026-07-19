@@ -1,5 +1,4 @@
 ---
-let mode = import.meta.env.MODE;
 ---
 
 <div
@@ -17,6 +16,6 @@ let mode = import.meta.env.MODE;
             class="absolute inset-0 w-full h-full border-none outline-none"></iframe>
     </div>
     <div
-        class=`absolute inset-0 w-full h-full bg-cover bg-center opacity-30 -z-10 ${mode==="production" ? "bg-[url('/abogados-rcg-astro-fromscratch/mesa_reunion.jpg')]" :"bg-[url('mesa_reunion.jpg')]"} transition-all animate-backgroundFadeIn`>
+        class="absolute inset-0 w-full h-full bg-cover bg-center opacity-30 -z-10 bg-[url('/mesa_reunion.jpg')] transition-all animate-backgroundFadeIn">
     </div>
 </div>

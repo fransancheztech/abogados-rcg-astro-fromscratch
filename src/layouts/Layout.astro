@@ -2,8 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/eb-garamond";
-import './src/styles/global.css';
-import "tailwindcss";
+import '../styles/global.css';
 ---
 
 <!doctype html>
@@ -14,9 +13,7 @@ import "tailwindcss";
         <link
             rel="icon"
             type="image/x-icon"
-            href={import.meta.env.MODE === "production"
-                ? "/abogados-rcg-astro-fromscratch/AbogadosRCG-Logo-icon.ico"
-                : "/AbogadosRCG-Logo-icon.ico"}
+            href="/AbogadosRCG-Logo-icon.ico"
         />
         <meta name="generator" content={Astro.generator} />
         <title>
